@@ -1,18 +1,8 @@
 'use strict'
 
 module.exports = {
-
-  origin: false,
-
-  methods: ['GET', 'PUT', 'PATCH', 'POST', 'DELETE'],
-
-
-  headers: true,
-
-
-  exposeHeaders: false,
-
-
-  credentials: false,
-  maxAge: 90
+  origin: ['http://localhost:5173'],  
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  headers: ['Content-Type', 'Accept', 'Authorization'],
+  credentials: true
 }

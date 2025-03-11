@@ -16,8 +16,8 @@ const Navbar = () => {
   const end = (
     <div className="flex gap-2 items-center">
       <span className="p-input-icon-left">
-        <i className="pi pi-search" />
-        <InputText placeholder="   Buscar produtos..." />
+        <i className="pi pi-search" style={{ left: '0.8rem' }} />
+        <InputText placeholder="   Buscar produtos..." style={{ paddingLeft: '2rem' }} />
       </span>
       <Button label="Perfil" icon="pi pi-user" severity="info" rounded text />
       <Button label="Carrinho" icon="pi pi-shopping-cart" severity="success" rounded />

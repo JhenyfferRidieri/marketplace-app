@@ -11,5 +11,5 @@ Route.get('/categories', 'ProductController.getCategories'); // Listar todas as 
 Route.get('/products/filter', 'ProductController.filterProducts'); // Filtro avançado de produtos
 
 Route.get('/', () => {
-  return { greeting: 'Hello world in JSON' }
+  return { greeting: 'API E-commerce - JSON' }
 });
