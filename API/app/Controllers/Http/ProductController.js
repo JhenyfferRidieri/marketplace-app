@@ -23,6 +23,28 @@ class ProductController {
       return response.status(404).json({ message: 'Produto não encontrado' });
     }
   }
+
+  async getProductDetails({ params, response }) {
+    return await this.findByName({ params, response });
+  }
+
+  async getCategories({ response }) {
+    const categories = await ProductService.getCategories();
+    return response.json(categories);
+  }
+
+  async filterProducts({ request, response }) {
+    const filters = request.get(); // Captura os filtros da query string
+    const filteredProducts = await ProductService.filterProducts(filters);
+    return response.json(filteredProducts);
+  }
+
+  async paginatedProducts({ request, response }) {
+    const { page, limit } = request.get();
+    const products = await ProductService.paginateProducts(parseInt(page) || 1, parseInt(limit) || 10);
+    return response.json(products);
+  }
+  
 }
 
 module.exports = ProductController;
