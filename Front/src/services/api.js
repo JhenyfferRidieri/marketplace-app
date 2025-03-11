@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://127.0.0.1:3333/products'; // URL do back-end
+const API_URL = 'http://127.0.0.1:3333/products'; 
 
 const api = axios.create({
   baseURL: API_URL,
