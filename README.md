@@ -37,7 +37,7 @@ cd marketplace-app
 
 ### 2.1 Instalando Dependências
 ```bash
-cd API  # Acesse a pasta da API
+cd API  
 npm install
 ```
 
@@ -62,7 +62,7 @@ Para testar, acesse `http://127.0.0.1:3333/products` no navegador ou no Postman.
 
 ### 3.1 Instalando Dependências
 ```bash
-cd ../Front  # Acesse a pasta do front-end
+cd Front  
 npm install
 ```
 
