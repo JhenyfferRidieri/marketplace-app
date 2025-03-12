@@ -90,44 +90,9 @@ npm run dev
 **Paginação dos produtos**  
 **API RESTful em AdonisJS** consumida pelo front-end  
 
----
+---  
 
-##  5. Estrutura do Projeto
-```
-marketplace-app/
-│── API/                # Back-End (AdonisJS)
-│   ├── app/            # Controllers, Models
-│   ├── database/       # Simulação de banco de dados (data.json)
-│   ├── start/          # Configurações do servidor
-│   ├── .env.example    # Arquivo de configuração do ambiente
-│   ├── server.js       # Arquivo de inicialização da API
-│   ├── README.md       # Documentação da API
-│
-│── Front/              # Front-End (React.js + Vite)
-│   ├── src/            # Código-fonte principal
-│   ├── public/         # Assets públicos
-│   ├── vite.config.js  # Configuração do Vite
-│   ├── README.md       # Documentação do Front-End
-│
-│── README.md           # Documentação geral do projeto
-│── .gitignore          # Arquivos ignorados pelo Git
-│── package.json        # Dependências do projeto
-```
-
----
-
-## **6. Endpoints da API**
-| Método | Rota                  | Descrição                          |
-|--------|----------------------|----------------------------------|
-| GET    | `/products`           | Retorna todos os produtos        |
-| GET    | `/products/:id`       | Retorna detalhes de um produto   |
-| GET    | `/products?category=X` | Filtra produtos por categoria   |
-| GET    | `/products?size=X`     | Filtra produtos por tamanho      |
-| GET    | `/products?color=X`    | Filtra produtos por cor          |
-
----
-
-## **7. Melhorias Futuras**
+## 5. Melhorias Futuras
 🔹 Implementar persistência do carrinho (`localStorage` ou banco de dados)  
 🔹 Criar um painel administrativo para gerenciar produtos  
 🔹 Melhorar a responsividade para dispositivos móveis  
@@ -135,7 +100,7 @@ marketplace-app/
 
 ---
 
-## 8. Contribuições
+## 6. Contribuições
 Contribuições são bem-vindas! Se quiser sugerir melhorias, abra uma **Issue** ou faça um **Pull Request**.
 
  **Desenvolvido por:** [Jhenyffer Ridieri](https://github.com/JhenyfferRidieri)
