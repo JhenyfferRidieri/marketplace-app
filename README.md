@@ -81,13 +81,20 @@ npm run dev
 ---
 
 ##  4. Funcionalidades Implementadas
-🔹**Exibição de produtos** com nome, preço e imagem  
+🔹**Exibição de produtos** com nome, preço e imagem 
+
 🔹**Modal de detalhes** ao clicar em um produto e podendo adicioná-lo ao carrinho de compras
+
 🔹**Carrinho de compras**, uma nova página com opção de adicionar e remover itens ou finalizar compra (estoura um alert)
+
 🔹**Filtro por categoria, cor e tamanho** funcionais 
+
 🔹**Ordenação por preço (maior e menor preço)**  funcional
+
 🔹**Barra de busca para encontrar produtos**  funcional
+
 🔹**Paginação dos produtos**  funcional 
+
 🔹**API RESTful em AdonisJS** consumida pelo front-end  
 
 ---  
