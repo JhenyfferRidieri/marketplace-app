@@ -1,31 +1,31 @@
 ###  **README.md para o `marketplace-app`**
 
 ```md
-# 🛒 Marketplace App
+ 🛒 Marketplace App
 
-Este é um projeto full-stack desenvolvido como parte de um desafio técnico, utilizando **AdonisJS** para o back-end e **React.js** para o front-end. A aplicação simula um marketplace de roupas, permitindo a exibição de produtos, aplicação de filtros, ordenação e adição de itens ao carrinho.
-
----
-
-## **Tecnologias Utilizadas**
-- **Back-End:** [AdonisJS](https://adonisjs.com/) (API RESTful)
-- **Front-End:** [React.js](https://reactjs.org/) + [PrimeReact](https://primereact.org/)
-- **Gerenciador de Pacotes:** npm
-- **Estilização:** TailwindCSS + PrimeReact
-- **Banco de Dados Simulado:** `data.json`
-- **Servidor de Desenvolvimento:** Vite (para o front)
+Este é um projeto full-stack desenvolvido como parte de um desafio técnico, utilizando AdonisJS para o back-end e React.js para o front-end. A aplicação simula um marketplace de roupas, permitindo a exibição de produtos, aplicação de filtros, ordenação e adição de itens ao carrinho.
 
 ---
 
-##  **1. Como Rodar o Projeto?**
+## Tecnologias Utilizadas
+- Back-End: [AdonisJS](https://adonisjs.com/) (API RESTful)
+- Front-End: [React.js](https://reactjs.org/) + [PrimeReact](https://primereact.org/)
+- Gerenciador de Pacotes: npm
+- Estilização: TailwindCSS + PrimeReact
+- Banco de Dados Simulado:`data.json`
+- Servidor de Desenvolvimento: Vite (para o front)
 
-### **1.1 Pré-requisitos**
+---
+
+##  1. Como Rodar o Projeto?
+
+### 1.1 Pré-requisitos
 Antes de começar, certifique-se de ter instalado:
-- **Node.js** (versão 16 ou superior) → [Baixar aqui](https://nodejs.org/)
-- **npm** (vem junto com o Node.js)
-- **Git** (para clonar o repositório)
+- Node.js (versão 16 ou superior) → [Baixar aqui](https://nodejs.org/)
+- npm (vem junto com o Node.js)
+- Git (para clonar o repositório)
 
-### **1.2 Clonando o Repositório**
+### 1.2 Clonando o Repositório
 ```bash
 git clone https://github.com/JhenyfferRidieri/marketplace-app.git
 cd marketplace-app
@@ -33,54 +33,54 @@ cd marketplace-app
 
 ---
 
-## **2. Rodando o Back-End (API - AdonisJS)**
+## 2. Rodando o Back-End (API - AdonisJS)
 
-### **2.1 Instalando Dependências**
+### 2.1 Instalando Dependências
 ```bash
 cd API  # Acesse a pasta da API
 npm install
 ```
 
-### **2.2 Configurando Variáveis de Ambiente**
+### 2.2 Configurando Variáveis de Ambiente
 Renomeie o arquivo `.env.example` para `.env` e configure a porta da API, se necessário:
 ```
 PORT=3333
 HOST=127.0.0.1
 ```
 
-### **2.3 Rodando o Servidor**
+### 2.3 Rodando o Servidor
 ```bash
 adonis serve --dev
 ```
-📌 **A API estará rodando em:** `http://127.0.0.1:3333`
+**A API estará rodando em:** `http://127.0.0.1:3333`
 
 Para testar, acesse `http://127.0.0.1:3333/products` no navegador ou no Postman.
 
 ---
 
-## **3. Rodando o Front-End (React.js)**
+## 3. Rodando o Front-End (React.js)
 
-### **3.1 Instalando Dependências**
+### 3.1 Instalando Dependências
 ```bash
 cd ../Front  # Acesse a pasta do front-end
 npm install
 ```
 
-### **3.2 Configurando a URL da API**
+### 3.2 Configurando a URL da API
 Verifique se o arquivo `.env` contém:
 ```
 VITE_API_URL=http://127.0.0.1:3333
 ```
 
-### **3.3 Rodando o Servidor**
+### 3.3 Rodando o Servidor
 ```bash
 npm run dev
 ```
-**O front estará rodando em:** `http://localhost:5173`
+*O front estará rodando em:* `http://localhost:5173`
 
 ---
 
-##  **4. Funcionalidades Implementadas**
+##  4. Funcionalidades Implementadas
 **Exibição de produtos** com nome, preço e imagem  
 **Modal de detalhes** ao clicar em um produto  
 **Carrinho de compras** com opção de adicionar e remover itens  
@@ -92,7 +92,7 @@ npm run dev
 
 ---
 
-##  **5. Estrutura do Projeto**
+##  5. Estrutura do Projeto
 ```
 marketplace-app/
 │── API/                # Back-End (AdonisJS)
@@ -135,7 +135,7 @@ marketplace-app/
 
 ---
 
-## **8. Contribuições**
+## 8. Contribuições
 Contribuições são bem-vindas! Se quiser sugerir melhorias, abra uma **Issue** ou faça um **Pull Request**.
 
  **Desenvolvido por:** [Jhenyffer Ridieri](https://github.com/JhenyfferRidieri)
