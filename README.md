@@ -97,18 +97,5 @@ npm run dev
 
 🔹**API RESTful em AdonisJS** consumida pelo front-end  
 
----  
-
-## 5. Melhorias Futuras
-🔹 Implementar persistência do carrinho (`localStorage` ou banco de dados)  
-🔹 Criar um painel administrativo para gerenciar produtos  
-🔹 Melhorar a responsividade para dispositivos móveis  
-🔹 Implementar autenticação de usuários  
-
----
-
-## 6. Contribuições
-Contribuições são bem-vindas! Se quiser sugerir melhorias, abra uma **Issue** ou faça um **Pull Request**.
-
  **Desenvolvido por:** [Jhenyffer Ridieri](https://github.com/JhenyfferRidieri)
 ```
