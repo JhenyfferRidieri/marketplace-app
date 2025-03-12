@@ -2,13 +2,20 @@
 .custom-navbar {
   background: #f3f3f3;
   padding: 12px 20px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Linha superior */
+.navbar-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #ddd;
+  width: 100%;
 }
 
-/* Nome do e-commerce dentro da navbar */
+/* Nome do e-commerce */
 .navbar-title {
   font-size: 22px;
   font-weight: bold;
@@ -19,48 +26,53 @@
 /* Ajuste dos menus */
 .menu-bar {
   flex: 1;
-  justify-content: flex-start;
   background: transparent;
   border: none;
 }
 
-/* Ajuste da linha inferior */
-.navbar-bottom {
+/* Container da barra de pesquisa e do botão do carrinho */
+.search-container {
+  background: white;
+  padding: 12px 20px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 12px;
-  margin-top: 5px;
+  width: 100%;
+  border-bottom: none;
 }
 
-/* Barra de pesquisa */
+/* Ajuste da barra de pesquisa */
 .search-box {
   background: white;
   border-radius: 8px;
-  padding: 8px 12px; /* Ajuste para igualar a altura ao botão do carrinho */
+  padding: 8px 12px;
   display: flex;
   align-items: center;
   border: 1px solid #ccc;
-  width: 240px;
-  height: 38px; /* Definir altura para igualar com o botão */
+  width: 350px;
+  height: 42px;
 }
 
 .search-box i {
   margin-right: 8px;
   color: #666;
   cursor: pointer;
-  font-size: 16px;
-  position: relative;
-  top: 2px; /* Ajustar ligeiramente a posição do ícone */
+  font-size: 18px;
 }
-
 .search-input {
   border: none;
-  outline: none;
+  outline: none; 
   width: 100%;
-  font-size: 14px;
+  font-size: 16px;
   background: transparent;
   height: 100%;
+}
+
+/* Removendo o efeito azul ao focar */
+.search-input:focus {
+  outline: none;
+  box-shadow: none; 
 }
 
 /* Botão do carrinho */
@@ -68,10 +80,10 @@
   background-color: #00a859;
   color: white;
   border-radius: 8px;
-  padding: 8px 16px; /* Ajuste para igualar com a altura da pesquisa */
+  padding: 8px 16px;
   font-weight: bold;
   transition: 0.3s;
-  height: 38px; /* Igualar altura ao campo de busca */
+  height: 38px;
   display: flex;
   align-items: center;
 }

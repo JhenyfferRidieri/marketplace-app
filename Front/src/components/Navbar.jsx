@@ -21,7 +21,7 @@ const Navbar = ({ cartCount, onCartClick, onSearch }) => {
     },
     {
       label: "Feminino",
-      icon: "pi pi-user-female",
+      icon: "pi pi-user",
       items: [
         { label: "Camisetas", command: () => navigate("/feminino/camisetas") },
         { label: "Calçados", command: () => navigate("/feminino/calcados") },
@@ -31,13 +31,13 @@ const Navbar = ({ cartCount, onCartClick, onSearch }) => {
     },
     {
       label: "Infantil",
-      icon: "pi pi-child",
+      icon: "pi pi-box", 
       items: [
         { label: "Roupas", command: () => navigate("/infantil/roupas") },
         { label: "Calçados", command: () => navigate("/infantil/calcados") },
         { label: "Acessórios", command: () => navigate("/infantil/acessorios") },
       ],
-    },
+    },    
     {
       label: "Ofertas",
       icon: "pi pi-tags",
@@ -51,25 +51,27 @@ const Navbar = ({ cartCount, onCartClick, onSearch }) => {
   ];
 
   return (
-    <nav className="custom-navbar shadow-md">
-      {/* Linha superior com nome e menu */}
-      <div className="navbar-top">
-        <h1 className="navbar-title" onClick={() => navigate("/")}>
-          Desafio E-commerce
-        </h1>
-        <Menubar model={items} className="menu-bar" />
-      </div>
+    <>
+      {/* Navbar fixa */}
+      <nav className="custom-navbar shadow-md">
+        <div className="navbar-top">
+          <h1 className="navbar-title" onClick={() => navigate("/")}>
+            Desafio E-commerce
+          </h1>
+          <Menubar model={items} className="menu-bar" />
+        </div>
+      </nav>
 
-      {/* Linha inferior com busca e carrinho */}
-      <div className="navbar-bottom">
-        <span className="p-input-icon-left search-box">
+      {/* Nova seção abaixo da navbar */}
+      <div className="search-container">
+        <div className="search-box">
           <i className="pi pi-search" />
           <InputText
             placeholder="Buscar..."
             className="search-input"
             onChange={(e) => onSearch(e.target.value)}
           />
-        </span>
+        </div>
         <Button
           label={`Carrinho (${cartCount})`}
           icon="pi pi-shopping-cart"
@@ -77,7 +79,7 @@ const Navbar = ({ cartCount, onCartClick, onSearch }) => {
           onClick={onCartClick}
         />
       </div>
-    </nav>
+    </>
   );
 };
 
