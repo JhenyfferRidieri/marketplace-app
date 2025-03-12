@@ -33,7 +33,7 @@ cd marketplace-app
 
 ---
 
-## 2. Rodando o Back-End (API - AdonisJS)
+## 2. Rodando a API - AdonisJS
 
 ### 2.1 Instalando Dependências
 ```bash
@@ -58,7 +58,7 @@ Para testar, acesse `http://127.0.0.1:3333/products` no navegador ou no Postman.
 
 ---
 
-## 3. Rodando o Front-End (React.js)
+## 3. Rodando o Front React.js
 
 ### 3.1 Instalando Dependências
 ```bash
@@ -81,14 +81,14 @@ npm run dev
 ---
 
 ##  4. Funcionalidades Implementadas
-**Exibição de produtos** com nome, preço e imagem  
-**Modal de detalhes** ao clicar em um produto  
-**Carrinho de compras** com opção de adicionar e remover itens  
-**Filtro por categoria, cor e tamanho**  
-**Ordenação por preço (maior e menor preço)**  
-**Barra de busca para encontrar produtos**  
-**Paginação dos produtos**  
-**API RESTful em AdonisJS** consumida pelo front-end  
+🔹**Exibição de produtos** com nome, preço e imagem  
+🔹**Modal de detalhes** ao clicar em um produto e podendo adicioná-lo ao carrinho de compras
+🔹**Carrinho de compras**, uma nova página com opção de adicionar e remover itens ou finalizar compra (estoura um alert)
+🔹**Filtro por categoria, cor e tamanho** funcionais 
+🔹**Ordenação por preço (maior e menor preço)**  funcional
+🔹**Barra de busca para encontrar produtos**  funcional
+🔹**Paginação dos produtos**  funcional 
+🔹**API RESTful em AdonisJS** consumida pelo front-end  
 
 ---  
 
