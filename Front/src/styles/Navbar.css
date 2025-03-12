@@ -15,12 +15,12 @@
   width: 100%;
 }
 
-/* Nome do e-commerce */
 .navbar-title {
   font-size: 22px;
   font-weight: bold;
   margin-right: 20px;
   cursor: pointer;
+  color: #4a4a4a; 
 }
 
 /* Ajuste dos menus */
@@ -30,7 +30,7 @@
   border: none;
 }
 
-/* Container da barra de pesquisa e do botão do carrinho */
+/* barra de pesquisa e do botão do carrinho */
 .search-container {
   background: white;
   padding: 12px 20px;
@@ -42,7 +42,7 @@
   border-bottom: none;
 }
 
-/* Ajuste da barra de pesquisa */
+/* barra de pesquisa */
 .search-box {
   background: white;
   border-radius: 8px;
@@ -69,7 +69,6 @@
   height: 100%;
 }
 
-/* Removendo o efeito azul ao focar */
 .search-input:focus {
   outline: none;
   box-shadow: none; 

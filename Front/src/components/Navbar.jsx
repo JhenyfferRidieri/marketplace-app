@@ -62,7 +62,6 @@ const Navbar = ({ cartCount, onCartClick, onSearch }) => {
         </div>
       </nav>
 
-      {/* Nova seção abaixo da navbar */}
       <div className="search-container">
         <div className="search-box">
           <i className="pi pi-search" />

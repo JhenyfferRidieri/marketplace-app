@@ -17,15 +17,16 @@
     transition: all 0.3s ease-in-out;
   }
   
-  .pagination-button:hover {
-    background-color: #f0f0f0;
+  .pagination-button.active {
+    background-color:  #1e3a8a;
+    color: white;
+    border-color:  #1e3a8a;
   }
   
-  .pagination-button.active {
-    background-color: #007bff; 
+  .pagination-button:hover {
+    background-color:  #1e3a8a; 
     color: white;
-    border-color: #007bff;
-  }
+  }  
   
   /* Estilização do seletor de ordenação */
 .sort-dropdown {
@@ -41,4 +42,13 @@
 
 .sort-dropdown:hover {
   border-color: #27ae60; 
+}
+
+.home-title {
+  color: #6b7280 !important; 
+  font-size: 14px; 
+  font-weight: 600;
+  display: inline-block; 
+  border-bottom: 2px solid #6b7280; 
+  padding-bottom: 4px; 
 }

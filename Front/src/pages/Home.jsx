@@ -111,8 +111,9 @@ const Home = () => {
 
         <main className="flex-1">
         <div className="flex justify-between items-center mb-5">
-          <h1 className="text-xl font-bold">Roupas para adulto masculino ({filteredProducts.length})</h1>
-
+        <h1 className="home-title font-bold">
+          Roupas para adulto masculino ({filteredProducts.length})
+        </h1>
           <div className="ml-auto mr-5 sort-dropdown-container">
             <select
               className="sort-dropdown"
@@ -123,7 +124,6 @@ const Home = () => {
               <option value="price-desc">Maior preço</option>
             </select>
           </div>
-
         </div>
 
           <ProductGrid products={currentProducts} onProductClick={setSelectedProduct} />
