@@ -8,8 +8,8 @@ Este é um projeto de desenvolvido como parte de um desafio técnico, utilizando
 ---
 
 ## Tecnologias Utilizadas
-- Back: [AdonisJS](https://adonisjs.com/) (API RESTful)
-- Front: [React.js](https://reactjs.org/) + [PrimeReact](https://primereact.org/)
+- Back: AdonisJS (API RESTful)
+- Front: React.js + PrimeReact
 - Gerenciador de Pacotes: npm
 - Banco de Dados Simulado:`data.json`
 - Servidor de Desenvolvimento: Vite (para o front)
