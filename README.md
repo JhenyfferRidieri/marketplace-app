@@ -3,15 +3,14 @@
 ```md
  🛒 Marketplace App
 
-Este é um projeto full-stack desenvolvido como parte de um desafio técnico, utilizando AdonisJS para o back-end e React.js para o front-end. A aplicação simula um marketplace de roupas, permitindo a exibição de produtos, aplicação de filtros, ordenação e adição de itens ao carrinho.
+Este é um projeto de desenvolvido como parte de um desafio técnico, utilizando AdonisJS para o back e React.js para o front. A aplicação simula um marketplace de roupas, permitindo a exibição de produtos, aplicação de filtros, ordenação e adição de itens ao carrinho.
 
 ---
 
 ## Tecnologias Utilizadas
-- Back-End: [AdonisJS](https://adonisjs.com/) (API RESTful)
-- Front-End: [React.js](https://reactjs.org/) + [PrimeReact](https://primereact.org/)
+- Back: [AdonisJS](https://adonisjs.com/) (API RESTful)
+- Front: [React.js](https://reactjs.org/) + [PrimeReact](https://primereact.org/)
 - Gerenciador de Pacotes: npm
-- Estilização: TailwindCSS + PrimeReact
 - Banco de Dados Simulado:`data.json`
 - Servidor de Desenvolvimento: Vite (para o front)
 
