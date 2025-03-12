@@ -98,6 +98,6 @@ npm run dev
 🔹**API RESTful em AdonisJS** consumida pelo front-end  
 
 ---
-```
+
  **Desenvolvido por:** [Jhenyffer Ridieri](https://github.com/JhenyfferRidieri)
-```
+
