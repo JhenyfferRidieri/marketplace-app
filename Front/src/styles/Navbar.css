@@ -1,4 +1,30 @@
-/* Ajuste para a parte inferior da navbar */
+/* Ajuste geral da navbar */
+.custom-navbar {
+  background: #f3f3f3;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Nome do e-commerce dentro da navbar */
+.navbar-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+/* Ajuste dos menus */
+.menu-bar {
+  flex: 1;
+  justify-content: flex-start;
+  background: transparent;
+  border: none;
+}
+
+/* Ajuste da linha inferior */
 .navbar-bottom {
   display: flex;
   align-items: center;
