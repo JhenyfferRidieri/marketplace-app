@@ -28,9 +28,8 @@ function ProductModal({ product, open, onClose, onAddToCart }) {
       </div>
 
       <Button
-        type="primary"
         icon={<FiShoppingCart size={16} />}
-        className="flex items-center justify-center gap-2 w-full"
+        className="add-to-cart-button flex items-center justify-center gap-2 w-full"
         onClick={() => onAddToCart(product, selectedSize)}
       >
         Adicionar ao Carrinho

@@ -18,7 +18,21 @@
   }
   
   .size-button.selected {
-    background-color: #1e3a8a; /* Azul escuro */
+    background-color: #162b60; 
     color: white;
-    border-color: #1e3a8a;
+    border-color:  #162b60;
   }  
+
+  .add-to-cart-button {
+    background-color: #162b60 !important; 
+    color: white !important;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    border: none !important; 
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #1b396d !important; 
+  }

@@ -85,16 +85,20 @@
   }
   
   .clear-button {
-    background-color: #ccc;
-    color: black;
+    background-color: #f2f2f2; 
+    color: #6b7280;
+    border: 1px solid #d1d5db; 
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .clear-button:hover {
+    background-color: #e0e0e0; 
+    color: #4b5563;
   }
   
   .apply-button:hover {
     background-color: #162b60;
-  }
-  
-  .clear-button:hover {
-    background-color: #bbb;
   }
   
   .mt-2 {
