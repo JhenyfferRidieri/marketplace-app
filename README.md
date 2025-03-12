@@ -33,7 +33,7 @@ cd marketplace-app
 
 ---
 
-## 2. Rodando o Back-End (API - AdonisJS)
+## 2. Rodando a API - AdonisJS
 
 ### 2.1 Instalando Dependências
 ```bash
@@ -58,7 +58,7 @@ Para testar, acesse `http://127.0.0.1:3333/products` no navegador ou no Postman.
 
 ---
 
-## 3. Rodando o Front-End (React.js)
+## 3. Rodando o Front React.js
 
 ### 3.1 Instalando Dependências
 ```bash
@@ -81,53 +81,25 @@ npm run dev
 ---
 
 ##  4. Funcionalidades Implementadas
-**Exibição de produtos** com nome, preço e imagem  
-**Modal de detalhes** ao clicar em um produto  
-**Carrinho de compras** com opção de adicionar e remover itens  
-**Filtro por categoria, cor e tamanho**  
-**Ordenação por preço (maior e menor preço)**  
-**Barra de busca para encontrar produtos**  
-**Paginação dos produtos**  
-**API RESTful em AdonisJS** consumida pelo front-end  
+🔹**Exibição de produtos** com nome, preço e imagem 
 
----
+🔹**Modal de detalhes** ao clicar em um produto e podendo adicioná-lo ao carrinho de compras
 
-##  5. Estrutura do Projeto
-```
-marketplace-app/
-│── API/                # Back-End (AdonisJS)
-│   ├── app/            # Controllers, Models
-│   ├── database/       # Simulação de banco de dados (data.json)
-│   ├── start/          # Configurações do servidor
-│   ├── .env.example    # Arquivo de configuração do ambiente
-│   ├── server.js       # Arquivo de inicialização da API
-│   ├── README.md       # Documentação da API
-│
-│── Front/              # Front-End (React.js + Vite)
-│   ├── src/            # Código-fonte principal
-│   ├── public/         # Assets públicos
-│   ├── vite.config.js  # Configuração do Vite
-│   ├── README.md       # Documentação do Front-End
-│
-│── README.md           # Documentação geral do projeto
-│── .gitignore          # Arquivos ignorados pelo Git
-│── package.json        # Dependências do projeto
-```
+🔹**Carrinho de compras**, uma nova página com opção de adicionar e remover itens ou finalizar compra (estoura um alert)
 
----
+🔹**Filtro por categoria, cor e tamanho** funcionais 
 
-## **6. Endpoints da API**
-| Método | Rota                  | Descrição                          |
-|--------|----------------------|----------------------------------|
-| GET    | `/products`           | Retorna todos os produtos        |
-| GET    | `/products/:id`       | Retorna detalhes de um produto   |
-| GET    | `/products?category=X` | Filtra produtos por categoria   |
-| GET    | `/products?size=X`     | Filtra produtos por tamanho      |
-| GET    | `/products?color=X`    | Filtra produtos por cor          |
+🔹**Ordenação por preço (maior e menor preço)**  funcional
 
----
+🔹**Barra de busca para encontrar produtos**  funcional
 
-## **7. Melhorias Futuras**
+🔹**Paginação dos produtos**  funcional 
+
+🔹**API RESTful em AdonisJS** consumida pelo front-end  
+
+---  
+
+## 5. Melhorias Futuras
 🔹 Implementar persistência do carrinho (`localStorage` ou banco de dados)  
 🔹 Criar um painel administrativo para gerenciar produtos  
 🔹 Melhorar a responsividade para dispositivos móveis  
@@ -135,7 +107,7 @@ marketplace-app/
 
 ---
 
-## 8. Contribuições
+## 6. Contribuições
 Contribuições são bem-vindas! Se quiser sugerir melhorias, abra uma **Issue** ou faça um **Pull Request**.
 
  **Desenvolvido por:** [Jhenyffer Ridieri](https://github.com/JhenyfferRidieri)
