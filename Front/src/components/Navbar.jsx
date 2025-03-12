@@ -1,54 +1,82 @@
-import React, { useState } from "react";
+import React from "react";
 import { Menubar } from "primereact/menubar";
 import { InputText } from "primereact/inputtext";
 import { Button } from "primereact/button";
-import "../styles/Navbar.css";  // Arquivo de estilos separado
+import { useNavigate } from "react-router-dom";
+import "../styles/Navbar.css";
 
 const Navbar = ({ cartCount, onCartClick, onSearch }) => {
-  const [searchQuery, setSearchQuery] = useState("");
-
-  const handleSearch = () => {
-    onSearch(searchQuery);
-  };
+  const navigate = useNavigate();
 
   const items = [
-    { label: "Início", icon: "pi pi-home" },
-    { label: "Promoções", icon: "pi pi-tags" },
-    { label: "Novidades", icon: "pi pi-star" },
-    { label: "Contato", icon: "pi pi-envelope" },
+    {
+      label: "Masculino",
+      icon: "pi pi-user",
+      items: [
+        { label: "Camisetas", command: () => navigate("/masculino/camisetas") },
+        { label: "Calçados", command: () => navigate("/masculino/calcados") },
+        { label: "Acessórios", command: () => navigate("/masculino/acessorios") },
+        { label: "Esportes", command: () => navigate("/masculino/esportes") },
+      ],
+    },
+    {
+      label: "Feminino",
+      icon: "pi pi-user-female",
+      items: [
+        { label: "Camisetas", command: () => navigate("/feminino/camisetas") },
+        { label: "Calçados", command: () => navigate("/feminino/calcados") },
+        { label: "Acessórios", command: () => navigate("/feminino/acessorios") },
+        { label: "Esportes", command: () => navigate("/feminino/esportes") },
+      ],
+    },
+    {
+      label: "Infantil",
+      icon: "pi pi-child",
+      items: [
+        { label: "Roupas", command: () => navigate("/infantil/roupas") },
+        { label: "Calçados", command: () => navigate("/infantil/calcados") },
+        { label: "Acessórios", command: () => navigate("/infantil/acessorios") },
+      ],
+    },
+    {
+      label: "Ofertas",
+      icon: "pi pi-tags",
+      command: () => navigate("/ofertas"),
+    },
+    {
+      label: "Lançamentos",
+      icon: "pi pi-star",
+      command: () => navigate("/lancamentos"),
+    },
   ];
 
-  const start = (
-    <h1 className="navbar-title">Desafio E-commerce</h1>
-  );
-
-  const end = (
-    <div className="navbar-end">
-      {/* Campo de Busca Ajustado */}
-      <div className="search-container">
-        <i className="pi pi-search search-icon" onClick={handleSearch} />
-        <InputText
-          placeholder="Buscar produtos..."
-          className="search-input"
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          onKeyDown={(e) => e.key === "Enter" && handleSearch()}
-        />
+  return (
+    <nav className="custom-navbar shadow-md">
+      {/* Linha superior com nome e menu */}
+      <div className="navbar-top">
+        <h1 className="navbar-title" onClick={() => navigate("/")}>
+          Desafio E-commerce
+        </h1>
+        <Menubar model={items} className="menu-bar" />
       </div>
 
-      {/* Botão do Carrinho bem posicionado */}
-      <Button
-        label={`Carrinho (${cartCount})`}
-        icon="pi pi-shopping-cart"
-        className="cart-button"
-        onClick={onCartClick}
-      />
-    </div>
-  );
-
-  return (
-    <nav className="navbar-container">
-      <Menubar model={items} start={start} end={end} className="navbar-menubar" />
+      {/* Linha inferior com busca e carrinho */}
+      <div className="navbar-bottom">
+        <span className="p-input-icon-left search-box">
+          <i className="pi pi-search" />
+          <InputText
+            placeholder="Buscar..."
+            className="search-input"
+            onChange={(e) => onSearch(e.target.value)}
+          />
+        </span>
+        <Button
+          label={`Carrinho (${cartCount})`}
+          icon="pi pi-shopping-cart"
+          className="cart-button"
+          onClick={onCartClick}
+        />
+      </div>
     </nav>
   );
 };
