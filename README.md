@@ -19,10 +19,9 @@ Este é um projeto de desenvolvido como parte de um desafio técnico, utilizando
 ##  1. Como Rodar o Projeto?
 
 ### 1.1 Pré-requisitos
-Antes de começar, certifique-se de ter instalado:
-- Node.js (versão 16 ou superior) → [Baixar aqui](https://nodejs.org/)
-- npm (vem junto com o Node.js)
-- Git (para clonar o repositório)
+- Node.js  → https://nodejs.org/
+- npm: vem junto com o Node.js
+- Git: para clonar o repositório
 
 ### 1.2 Clonando o Repositório
 ```bash
