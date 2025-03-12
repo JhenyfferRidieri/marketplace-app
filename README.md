@@ -3,7 +3,9 @@
 ```md
  🛒 Marketplace App
 
-Este é um projeto de desenvolvido como parte de um desafio técnico, utilizando AdonisJS para o back e React.js para o front. A aplicação simula um marketplace de roupas, permitindo a exibição de produtos, aplicação de filtros, ordenação e adição de itens ao carrinho.
+Este é um projeto de desenvolvido como parte de um desafio técnico, utilizando AdonisJS
+para o back e React.js para o front. A aplicação simula um marketplace de roupas, permitindo a
+exibição de produtos, aplicação de filtros, ordenação e adição de itens ao carrinho.
 
 ---
 
