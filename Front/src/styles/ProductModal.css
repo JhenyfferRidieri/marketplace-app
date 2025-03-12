@@ -1,0 +1,24 @@
+.size-buttons {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .size-button {
+    border: 2px solid #ccc;
+    padding: 6px 12px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .size-button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .size-button.selected {
+    background-color: #1e3a8a; /* Azul escuro */
+    color: white;
+    border-color: #1e3a8a;
+  }  

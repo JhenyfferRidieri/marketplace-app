@@ -1,0 +1,71 @@
+/* Estilização do Navbar */
+.navbar-container {
+    width: 100%;
+    background-color: #f8f9fa; 
+    padding: 12px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Ajuste do menu */
+  .navbar-menubar {
+    width: 100%;
+    background: transparent !important;
+    border: none;
+  }
+  
+  /* Título do Navbar */
+  .navbar-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-right: 20px;
+    white-space: nowrap;
+  }
+  
+  /* Container do lado direito */
+  .navbar-end {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  /* Ajuste do campo de busca */
+  .search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #e0e0e0; 
+    border-radius: 20px;
+    padding: 5px 12px;
+  }
+  
+  .search-input {
+    width: 180px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 0.9rem;
+  }
+  
+  .search-icon {
+    color: gray;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  /* Estilização do botão do carrinho */
+  .cart-button {
+    background-color: #27ae60 !important;
+    color: white !important;
+    font-weight: bold;
+    padding: 6px 14px !important;
+    border-radius: 20px !important;
+  }
+  
+  .cart-button:hover {
+    background-color: #219150 !important;
+  }
+  

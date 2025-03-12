@@ -6,8 +6,9 @@
     "price": 349.99,
     "seller": "Nike",
     "available_sizes": ["P", "M", "G", "GG"],
-    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "sport": "Futebol"
+    "details": "Camiseta oficial do Brasil, ideal para torcer.",
+    "sport": "Futebol",
+    "colors": ["Amarelo", "Verde"]
   },
   {
     "name": "Regata do Chicago Bulls",
@@ -16,8 +17,9 @@
     "price": 499.99,
     "seller": "Adidas",
     "available_sizes": ["P", "M", "G", "XPP"],
-    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "sport": "Basquete"
+    "details": "Regata clássica do Chicago Bulls.",
+    "sport": "Basquete",
+    "colors": ["Vermelho", "Preto"]
   },
   {
     "name": "Calção da Puma",
@@ -26,8 +28,9 @@
     "price": 99.69,
     "seller": "Puma",
     "available_sizes": ["P", "M", "G"],
-    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "sport": "Corrida"
+    "details": "Calção esportivo leve.",
+    "sport": "Corrida",
+    "colors": ["Preto"]
   },
   {
     "name": "Calção da Nike",
@@ -35,9 +38,10 @@
     "type": "Calção",
     "price": 109.69,
     "seller": "Nike",
-    "available_sizes": [],
-    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "sport": "Corrida"
+    "available_sizes": ["P", "M", "G"],
+    "details": "Calção esportivo leve.",
+    "sport": "Corrida",
+    "colors": ["Preto"]
   },
   {
     "name": "Meia da Jordan",
@@ -46,7 +50,8 @@
     "price": 119.69,
     "seller": "Jordan",
     "available_sizes": ["44", "39"],
-    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "sport": "Basquete"
+    "details": "Meia confortável com logo da Jordan.",
+    "sport": "Basquete",
+    "colors": ["Preto"]
   }
 ]

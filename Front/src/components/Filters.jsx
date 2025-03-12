@@ -1,33 +1,112 @@
-const Filters = () => {
-  return (
-    <div className="p-3 bg-white shadow-md rounded-lg w-56">
-      <h2 className="text-md font-semibold mb-2 text-gray-800">Filtros</h2>
+import React, { useState } from "react";
+import "../styles/Filters.css";
 
-      {/* Categoria */}
+const Filters = ({ onApplyFilters, onClearFilters }) => {
+  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedSize, setSelectedSize] = useState(null);
+  const [selectedColor, setSelectedColor] = useState(null);
+
+  const categories = ["Camiseta", "Regata", "Calção", "Acessório"];
+  const colors = [
+    { name: "Amarelo", hex: "#FFD700" },
+    { name: "Azul", hex: "#1E90FF" },
+    { name: "Bege", hex: "#F5F5DC" },
+    { name: "Branco", hex: "#FFFFFF" },
+    { name: "Preto", hex: "#000000" },
+    { name: "Vermelho", hex: "#DC143C" },
+    { name: "Verde", hex: "#008000" }
+  ];
+  const sizesText = ["P", "M", "G", "GG"];
+  const sizesNumbers = ["42", "44", "46"];
+
+  const handleClearFilters = () => {
+    setSelectedCategory(null);
+    setSelectedSize(null);
+    setSelectedColor(null);
+
+    // Chamando a função para limpar os filtros no componente pai
+    onClearFilters();
+
+    document.querySelectorAll(".category-button, .size-button, .color-button").forEach((el) => {
+      el.classList.remove("selected");
+    });
+  };
+
+  return (
+    <div className="filter-container">
+      {/* Categorias */}
       <div className="mb-3">
-        <label className="block text-gray-600 text-sm font-medium">Categoria:</label>
-        <select className="w-full border rounded-md px-2 py-1 bg-gray-100 text-sm">
-          <option value="">Todas</option>
-          <option value="Camiseta">Camiseta</option>
-          <option value="Regata">Regata</option>
-          <option value="Calção">Calção</option>
-        </select>
+        <h4 className="text-sm font-semibold mb-2">Categoria</h4>
+        <div className="category-buttons">
+          {categories.map((category) => (
+            <button
+              key={category}
+              className={`category-button ${selectedCategory === category ? "selected" : ""}`}
+              onClick={() => setSelectedCategory(category)}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
       </div>
 
-      {/* Tamanho */}
+      {/* Cores */}
+      <div className="mb-3">
+        <h4 className="text-sm font-semibold mb-2">Cores</h4>
+        <div className="color-buttons">
+          {colors.map((color) => (
+            <button
+              key={color.name}
+              className={`color-button ${selectedColor === color.name ? "selected" : ""}`}
+              style={{
+                backgroundColor: color.hex,
+                border: selectedColor === color.name ? "2px solid black" : "1px solid gray"
+              }}
+              onClick={() => setSelectedColor(color.name)}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Tamanhos */}
       <div>
-        <label className="block text-gray-600 text-sm font-medium">Tamanho:</label>
-        <div className="grid grid-cols-4 gap-1 mt-2">
-          {["P", "M", "G", "GG", "42", "44", "46"].map((size) => (
+        <h4 className="text-sm font-semibold mb-2">Tamanho</h4>
+        <div className="size-buttons">
+          {sizesText.map((size) => (
             <button
               key={size}
-              className="border rounded-md px-2 py-1 text-xs bg-gray-100 hover:bg-gray-200 transition-all"
+              className={`size-button ${selectedSize === size ? "selected" : ""}`}
+              onClick={() => setSelectedSize(size)}
+            >
+              {size}
+            </button>
+          ))}
+        </div>
+        <div className="size-buttons mt-2">
+          {sizesNumbers.map((size) => (
+            <button
+              key={size}
+              className={`size-button ${selectedSize === size ? "selected" : ""}`}
+              onClick={() => setSelectedSize(size)}
             >
               {size}
             </button>
           ))}
         </div>
       </div>
+
+      {/* Botão Aplicar */}
+      <button
+        className="apply-button"
+        onClick={() => onApplyFilters({ category: selectedCategory, size: selectedSize, color: selectedColor })}
+      >
+        Aplicar
+      </button>
+
+      {/* Botão Limpar */}
+      <button className="clear-button" onClick={handleClearFilters}>
+        Limpar Filtro
+      </button>
     </div>
   );
 };

@@ -1,0 +1,44 @@
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 5px;
+    border-radius: 25px; 
+    border: 2px solid #ccc;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .pagination-button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .pagination-button.active {
+    background-color: #007bff; 
+    color: white;
+    border-color: #007bff;
+  }
+  
+  /* Estilização do seletor de ordenação */
+.sort-dropdown {
+  border: 2px solid #ccc;
+  padding: 6px 14px;
+  border-radius: 8px; 
+  background: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.sort-dropdown:hover {
+  border-color: #27ae60; 
+}

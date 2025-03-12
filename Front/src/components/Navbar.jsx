@@ -1,32 +1,54 @@
-import React from 'react';
-import { Menubar } from 'primereact/menubar';
-import { InputText } from 'primereact/inputtext';
-import { Button } from 'primereact/button';
+import React, { useState } from "react";
+import { Menubar } from "primereact/menubar";
+import { InputText } from "primereact/inputtext";
+import { Button } from "primereact/button";
+import "../styles/Navbar.css";  // Arquivo de estilos separado
 
-const Navbar = () => {
+const Navbar = ({ cartCount, onCartClick, onSearch }) => {
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const handleSearch = () => {
+    onSearch(searchQuery);
+  };
+
   const items = [
-    { label: 'Camiseta', icon: 'pi pi-tag' },
-    { label: 'Regata', icon: 'pi pi-tag' },
-    { label: 'Calção', icon: 'pi pi-tag' },
-    { label: 'Acessório', icon: 'pi pi-tag' },
+    { label: "Início", icon: "pi pi-home" },
+    { label: "Promoções", icon: "pi pi-tags" },
+    { label: "Novidades", icon: "pi pi-star" },
+    { label: "Contato", icon: "pi pi-envelope" },
   ];
 
-  const start = <h1 className="font-bold text-xl">Marketplace</h1>;
+  const start = (
+    <h1 className="navbar-title">Desafio E-commerce</h1>
+  );
 
   const end = (
-    <div className="flex gap-2 items-center">
-      <span className="p-input-icon-left">
-        <i className="pi pi-search" style={{ left: '0.8rem' }} />
-        <InputText placeholder="   Buscar produtos..." style={{ paddingLeft: '2rem' }} />
-      </span>
-      <Button label="Perfil" icon="pi pi-user" severity="info" rounded text />
-      <Button label="Carrinho" icon="pi pi-shopping-cart" severity="success" rounded />
+    <div className="navbar-end">
+      {/* Campo de Busca Ajustado */}
+      <div className="search-container">
+        <i className="pi pi-search search-icon" onClick={handleSearch} />
+        <InputText
+          placeholder="Buscar produtos..."
+          className="search-input"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          onKeyDown={(e) => e.key === "Enter" && handleSearch()}
+        />
+      </div>
+
+      {/* Botão do Carrinho bem posicionado */}
+      <Button
+        label={`Carrinho (${cartCount})`}
+        icon="pi pi-shopping-cart"
+        className="cart-button"
+        onClick={onCartClick}
+      />
     </div>
   );
 
   return (
-    <nav className="shadow-md">
-      <Menubar model={items} start={start} end={end} />
+    <nav className="navbar-container">
+      <Menubar model={items} start={start} end={end} className="navbar-menubar" />
     </nav>
   );
 };
